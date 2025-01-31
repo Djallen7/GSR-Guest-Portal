@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSR Interview Guest Portal</title>
+
+  <!-- Link to External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">GSR Guest Portal</h1>
+        <ul class="nav-links">
+          <li><a href="#">Submit Materials</a></li>
+          <li><a href="#">Guest Resources</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Genesis Science Report Interview Guest Portal</h2>
+        <p>Submit your materials for a seamless interview process.</p>
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Submit Materials Section -->
+    <section class="submit-section">
+      <h2>Submit Materials</h2>
+      <p>Fill out the form below to help us prepare for your interview.</p>
+      <form class="submit-materials-form" action="#" method="POST">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+
+        <label for="guestBio">Guest Biography:</label>
+        <textarea id="guestBio" name="guestBio" placeholder="Provide a brief biography…" required></textarea>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" placeholder="CEO, Scientist, Professor, etc.">
+
+        <label for="talkingPoints">Talking Points:</label>
+        <textarea id="talkingPoints" name="talkingPoints" placeholder="List key topics for discussion…" required></textarea>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Example: New York, NY" required>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Form Validation Script -->
+  <script>
+    document.querySelector(".submit-materials-form").addEventListener("submit", function (e) {
+      const fullName = document.getElementById("fullName");
+      if (fullName.value.trim() === "") {
+        alert("Please enter your full name.");
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
