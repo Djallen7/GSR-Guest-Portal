@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSR Guest Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF9F6;
+            color: #333;
+        }
+
+        header {
+            background-color: #205375;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #205375;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .button {
+            background-color: #34A0A4;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #277f7f;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .collapsible {
+            background-color: #205375;
+            color: white;
+            cursor: pointer;
+            padding: 1rem;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .collapsible::after {
+            content: '\25BC';
+            /* Down arrow icon */
+            font-size: 1rem;
+            color: white;
+        }
+
+        .collapsible.active::after {
+            content: '\25B2';
+            /* Up arrow icon */
+        }
+
+        .content {
+            padding: 1rem;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #34A0A4;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: white;
+        }
+
+        ul li+li {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: #f4faff; text-shadow: 1px 1px 2px #0c3452;">Genesis Science Report Interview Guest Portal</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Welcome Section -->
+        <section class="section">
+            <h2>Welcome to the GSR Guest Portal!</h2>
+            <p>We're thrilled to have you as our guest and look forward to your insightful interview!</p>
+            <p>This portal is designed to provide you with all the resources you need to prepare for your upcoming interview.</p>
+            <a href="https://gsrguestpacket.tiiny.site" class="button">Download GSR Guest Packet</a>
+        </section>
+
+        <!-- Interview Details Section -->
+        <section class="section">
+            <h2>Interview Details</h2>
+            <p>Your interview is scheduled for [Date and Time].</p>
+        </section>
+
+        <!-- Preparation Submission Form -->
+        <section class="section">
+            <h2>Submit Your Interview Materials</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="bio">Guest Biography:</label>
+                <textarea id="bio" name="bio" rows="4" required></textarea>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="talking-points">Talking Points:</label>
+                <textarea id="talking-points" name="talking_points" rows="4" required></textarea>
+
+                <label for="location">Location (City and State):</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="media">Media Uploads (Images/Videos):</label>
+                <input type="file" id="media" name="media" accept="image/*,video/*" multiple>
+
+                <button type="submit" class="button">Submit Materials</button>
+            </form>
+        </section>
+
+        <!-- Technical Requirements Section -->
+        <section class="section">
+            <h2>Equipment Requirements</h2>
+            <button class="collapsible">Internet Speed</button>
+            <div class="content">
+                <p>A stable internet connection is crucial for a smooth Zoom interview.</p>
+                <ul>
+                    <li>The minimum recommended speed is 10 Mbps.</li>
+                    <li>You can test your internet speed by googling "internet speed test" or visiting <a href='https://fast.com' target='_blank'>fast.com</a>.</li>
+                </ul>
+            </div>
+
+            <button class="collapsible">Camera/Video</button>
+            <div class="content">
+                <ul>
+                    <li>A high-quality external webcam will produce a much clearer video image than a built-in laptop camera.</li>
+                    <li>Good lighting is key, so ensure your workspace is well-lit from the front and try to avoid shadows.</li>
+                    <li>Position your webcam at eye level, or slightly above, for a professional look.</li>
+                    <li>Check your background to make sure it looks clean, uncluttered, and professional.</li>
+                    <li>Avoid using "blurred background" setting in Zoom.</li>
+                </ul>
+            </div>
+
+            <button class="collapsible">Microphone/Audio</button>
+            <div class="content">
+                <p>Clear audio is essential for a professional broadcast.</p>
+                <ul>
+                    <li>We recommend using a high-quality microphone (USB microphones are ideal).</li>
+                    <li>If possible, avoid using built-in laptop microphones as they tend to pick up background noise.</li>
+                    <li>Test your microphone setup before the interview to ensure optimal audio quality.</li>
+                    <li>We're happy to provide recommendations if needed.</li>
+                </ul>
+            </div>
+
+            <!-- Support & FAQ Section -->
+            <section class="section">
+                <h2>Support & FAQ</h2>
+                <div class="faq-item">
+                    <h3>How do I join the virtual session?</h3>
+                    <p>You will receive a Zoom link via email 24 hours before the interview.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Who do I contact for technical issues?</h3>
+                    <p>You can email the producer, Daniel Allen, at dallen@davidrives.com or call (615) 939-1773.</p>
+                </div>
+            </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Genesis Science Report. All rights reserved.
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                item.parentElement.classList.toggle('open');
+            });
+        });
+
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+                const content = button.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
