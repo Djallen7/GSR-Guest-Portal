@@ -8,7 +8,7 @@ This is the official Genesis Science Report (GSR) Guest Portal, where interview 
 - Clean, professional layout  
 
 ## Deployment  
-The site is hosted using GitHub Pages. Visit the live site [here](https://yourusername.github.io/gsr-guest-portal).  
+The site is hosted using GitHub Pages. Visit the live site [here](https://gsrguestportal.com).  
 
 ## How to Run Locally  
 1. Clone the repository  
