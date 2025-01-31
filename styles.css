@@ -1,0 +1,138 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: #205375;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #34A0A4;
+}
+
+.hero {
+  background: linear-gradient(to right, #205375, #34A0A4);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-button {
+  background: #34A0A4;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: #205375;
+  transform: scale(1.05);
+}
+
+/* Submit Materials Section */
+.submit-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.submit-section h2 {
+  color: #205375;
+}
+
+.submit-materials-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-materials-form label {
+  margin-top: 1rem;
+  color: #205375;
+}
+
+.submit-materials-form input,
+.submit-materials-form textarea {
+  margin-top: 0.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.submit-btn {
+  background: #34A0A4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #205375;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+}
