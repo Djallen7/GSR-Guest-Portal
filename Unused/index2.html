@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GSR Guest Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        /* Color Palette */
+        :root {
+            --primary: #0B294D;
+            --secondary: #4CA3E5;
+            --background: #FFFFFF;
+            --dark-blue: #11335A;
+        }
+
+        /* General Styling */
+        body {
+            background-color: var(--background);
+            color: var(--dark-blue);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--primary);
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            color: var(--background) !important;
+            font-weight: bold;
+        }
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        /* Hero Section */
+        .jumbotron {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: var(--background);
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 0;
+        }
+        .jumbotron h1 {
+            font-weight: bold;
+        }
+        .jumbotron img {
+            width: 100%;
+            max-width: 500px;
+            margin: 15px auto;
+        }
+
+        /* Section Styling */
+        .container section {
+            background: var(--background);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: var(--secondary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--background);
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+        .btn-primary:hover {
+            background-color: var(--dark-blue);
+            border-color: var(--dark-blue);
+        }
+
+        /* Title Logo */
+        .title-logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .title-logo img {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar with GSR Logo -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+          <img src="GSR_Logo_for_Print_and_Web_2.jpeg" alt="GSR Logo">
+       </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+             <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+             <li class="nav-item"><a class="nav-link" href="interview-details.html">Interview Details</a></li>
+             <li class="nav-item"><a class="nav-link" href="preparation.html">Preparation Materials</a></li>
+             <li class="nav-item"><a class="nav-link" href="technical.html">Technical Requirements</a></li>
+             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+       </div>
+    </nav>
+
+    <!-- Title Logo Below Navbar -->
+    <div class="title-logo">
+       <img src="GSR_1Line_Text_Logo_for_Print_and_Web_2.jpeg" alt="Genesis Science Report">
+    </div>
+    
+    <!-- Hero Section -->
+    <div class="jumbotron">
+       <h1 class="display-4">Welcome to the GSR Guest Portal</h1>
+       <p class="lead">Your one-stop resource for a smooth and impactful interview experience on the Genesis Science Report.</p>
+       <a href="interview-details.html" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+    
+    <div class="container">
+       <section id="about">
+          <h2>About the Genesis Science Report</h2>
+          <p><strong>The Genesis Science Report (GSR)</strong> is a fast-paced, news-style television show exploring the connection between science and faith. Produced by <strong>David Rives Ministries</strong>, it airs on the <strong>Genesis Science Network</strong>, the only 24/7 science network with a biblical perspective.</p>
+       </section>
+
+       <section id="expectations">
+          <h2>What to Expect</h2>
+          <ul>
+             <li><strong>Engaging, dynamic discussion</strong> – Not a lecture or PowerPoint presentation.</li>
+             <li><strong>13-minute segment</strong> – Focused and structured conversation.</li>
+             <li><strong>Live-to-tape format</strong> – Filmed in one continuous session.</li>
+             <li><strong>Broadcast-level production</strong> – Professional team handling all graphics and transitions.</li>
+          </ul>
+          <a href="preparation.html" class="btn btn-primary">Learn More</a>
+       </section>
+
+       <section id="contact">
+          <h2>Need Assistance?</h2>
+          <p>We’re here to help! If you have any questions, reach out to our producer:</p>
+          <p><strong>Email:</strong> <a href="mailto:dallen@davidrives.com">dallen@davidrives.com</a></p>
+          <p><strong>Phone:</strong> (615) 939-1773</p>
+       </section>
+    </div>
+    
+    <footer>
+       <p>&copy; 2025 Genesis Science Report. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
